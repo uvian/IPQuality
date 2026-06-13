@@ -1,10 +1,8 @@
 <p align="center">
-<img src="https://hits.xykt.de/ip.svg?action=view&count_bg=%2379C83D&title_bg=%23555555&title=Runs&edge_flat=false"/> 
-<img src="https://hits.xykt.de/ip_github.svg?action=hit&count_bg=%233DC8C0&title_bg=%23555555&title=Visits&edge_flat=false"/> 
 <a href="/LICENSE"><img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg" alt="license" /></a>  
 </p>
 
-## IP Quality Check Script  -  [IP质量体检脚本 (中文)](https://github.com/xykt/IPQuality/blob/main/README.md)
+## IP Quality Check Script  -  [IP质量体检脚本 (中文)](https://github.com/uvian/IPQuality/blob/main/README.md)
 
 **Supported OS/Platform: Ubuntu | Debian | Linux Mint | Fedora | Red Hat Enterprise Linux (RHEL) | CentOS | Arch Linux | Manjaro | Alpine Linux | AlmaLinux | Rocky Linux | macOS | Anolis OS | Alibaba Cloud Linux | SUSE Linux | openSUSE | Void Linux | Windows (via Docker)**
 
@@ -19,13 +17,13 @@
 - Over 400 IP address blacklist database checks
 
 ##### Screenshots
-![Screenshot](https://raw.githubusercontent.com/xykt/IPQuality/main/res/en_IPv4.svg)
+![Screenshot](https://raw.githubusercontent.com/uvian/IPQuality/main/res/en_IPv4.svg)
 
 ## Usage
 
 ### Easy Mode: Run with Interactive Interface
 
-![Net](https://github.com/xykt/ScriptMenu/raw/main/res/IP_EN.png)
+![Net](https://github.com/uvian/IPQuality/raw/main/res/en_IPv4.svg)
 
 ##### Bash:
 ````bash
@@ -35,17 +33,17 @@ bash <(curl -Ls https://Check.Place) -EI
 ##### Docker:
 - Linux
 ````bash
-docker run --rm --net=host -it xykt/check -EI && docker rmi xykt/check > /dev/null 2>&1
+docker run --rm --net=host -it uvian/ipquality -EI && docker rmi uvian/ipquality > /dev/null 2>&1
 ````
 
 - Windows (CMD)
 ````bash
-docker run --rm --net=host -it xykt/check -EI & docker rmi xykt/check > NUL 2>&1
+docker run --rm --net=host -it uvian/ipquality -EI & docker rmi uvian/ipquality > NUL 2>&1
 ````
 
 ### Advanced Mode: Run with Parameters
 
-![Help](https://github.com/xykt/IPQuality/raw/main/res/help.png)
+![Help](https://github.com/uvian/IPQuality/raw/main/res/help.png)
 
 ##### English version of dual-stack test (Either):
 ````bash
@@ -92,7 +90,7 @@ bash <(curl -Ls https://IP.Check.Place) -Ey
 bash <(curl -Ls https://IP.Check.Place) -Ef
 ````
 
-##### JSON output ([Example Output](https://github.com/xykt/IPQuality/blob/main/res/output.json))：
+##### JSON output ([Example Output](https://github.com/uvian/IPQuality/blob/main/res/output.json))：
 ````bash
 bash <(curl -Ls https://IP.Check.Place) -Ej
 ````
@@ -117,12 +115,12 @@ bash <(curl -Ls https://IP.Check.Place) -Ep
 ##### Docker (supports runtime arguments; insert them before the ```&```):
 - Linux
 ````bash
-docker run --rm --net=host -it xykt/ipquality -E && docker rmi xykt/ipquality > /dev/null 2>&1
+docker run --rm --net=host -it uvian/ipquality -E && docker rmi uvian/ipquality > /dev/null 2>&1
 ````
 
 - Windows (CMD)
 ````bash
-docker run --rm --net=host -it xykt/ipquality -E & docker rmi xykt/ipquality > NUL 2>&1
+docker run --rm --net=host -it uvian/ipquality -E & docker rmi uvian/ipquality > NUL 2>&1
 ````
 
 ## Script Updates
@@ -181,8 +179,8 @@ docker run --rm --net=host -it xykt/ipquality -E & docker rmi xykt/ipquality > N
 
 | Sponsor | Logo | Link | 
 | - | - | - | 
-| IP2Location | ![ip2location_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_ip2location.png) | [https://ip2location.io](https://ip2location.io)</br>[https://ip2location.com](https://ip2location.com) | 
-| Scamalytics | ![scamalytics_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_scamalytics.png) | [https://scamalytics.com](https://scamalytics.com) | 
+| IP2Location | ![ip2location_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_ip2location.png) | [https://ip2location.io](https://ip2location.io)</br>[https://ip2location.com](https://ip2location.com) | 
+| Scamalytics | ![scamalytics_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_scamalytics.png) | [https://scamalytics.com](https://scamalytics.com) | 
 
 - Sincerely appreciate the IP threat intelligence data provided by leading providers (No ranking implied, listed in alphabetical order): [AbuseIPDB](https://www.abuseipdb.com/)/[Cloudflare](https://cloudflare.com/)/[DB-IP](https://db-ip.com/)/[IP2Location](https://www.ip2location.io/)/[ipapi](https://ipapi.is/)/[IPinfo](https://ipinfo.io/)/[IPQS](https://www.ipqualityscore.com/)/[ipregistry](https://ipregistry.co/)/[Scamalytics](https://scamalytics.com/) 
 
@@ -194,23 +192,22 @@ docker run --rm --net=host -it xykt/ipquality -E & docker rmi xykt/ipquality > N
 
 | Sponsor | Logo | Link | 
 | - | - | - |
-| V.PS | ![vps_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_vps.png) | [https://v.ps](https://v.ps)| 
-| BAGE | ![bage_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_bage.png) | [https://bagevm.com](https://bagevm.com)|
-| LisaHost</br>丽萨主机 | ![lisa_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_lisa.png) | [https://lisahost.com](https://lisahost.com)|
-| VIRCS</br>威尔克斯 | ![vircs_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_vircs.png) | [https://vircs.com](https://www.vircs.com/promotion?code=6)|   
-| RapidProxy</br>`ISP IP` | ![rapidproxy_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_rapidproxy.png) | [https://rapidproxy.io](https://www.rapidproxy.io/?ref=gitipquality)|   
-| VMRack | ![vmrack_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_vmrack.png) | [https://vmrack.net](https://www.vmrack.net?affid=ipcheck)|   
-| YINNET</br>蔭雲 | ![yinnet_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_yinnet.png) | [https://yin-net.com](https://yin-net.com)| 
-| Swiftproxy</br>`ISP IP` | ![swiftproxy_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_swiftproxy.png) | [https://swiftproxy.net](https://www.swiftproxy.net/?ref=ipquality)|   
-| IPWO</br>`ISP IP` | ![ipwo_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_ipwo.png) | [https://ipwo.net](https://www.ipwo.net/?ref=githubxykt)|  
+| V.PS | ![vps_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_vps.png) | [https://v.ps](https://v.ps)| 
+| BAGE | ![bage_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_bage.png) | [https://bagevm.com](https://bagevm.com)|
+| LisaHost</br>丽萨主机 | ![lisa_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_lisa.png) | [https://lisahost.com](https://lisahost.com)|
+| VIRCS</br>威尔克斯 | ![vircs_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_vircs.png) | [https://vircs.com](https://www.vircs.com/promotion?code=6)|   
+| RapidProxy</br>`ISP IP` | ![rapidproxy_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_rapidproxy.png) | [https://rapidproxy.io](https://www.rapidproxy.io/?ref=gitipquality)|   
+| VMRack | ![vmrack_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_vmrack.png) | [https://vmrack.net](https://www.vmrack.net?affid=ipcheck)|   
+| YINNET</br>蔭雲 | ![yinnet_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_yinnet.png) | [https://yin-net.com](https://yin-net.com)| 
+| Swiftproxy</br>`ISP IP` | ![swiftproxy_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_swiftproxy.png) | [https://swiftproxy.net](https://www.swiftproxy.net/?ref=ipquality)|   
+| IPWO</br>`ISP IP` | ![ipwo_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_ipwo.png) | [https://ipwo.net](https://www.ipwo.net/?ref=uvian)|  
 
 ##### *E-Mail: sponsor@check.place Telegram Bot: https://t.me/xythebot*
 **Only accepting merchants with long-term stable operations and good reputation*
 
 **Stars History:**
 
-![Stargazers over time](https://starchart.cc/xykt/IPQuality.svg?background=%23FFFFFF&axis=%23333333&line=%2377dd77)
+![Stargazers over time](https://starchart.cc/uvian/IPQuality.svg?background=%23FFFFFF&axis=%23333333&line=%2377dd77)
 
 **Daily Runs History:**
 
-![daily_runs_history](https://hits.xykt.de/history/ip.svg?days=46&chartType=bar&title=Daily%20Runs%20of%20IP%20Quality%20Script&width=1024&height=400&color=green)

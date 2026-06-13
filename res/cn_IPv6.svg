@@ -84,7 +84,7 @@
 </g>
 <text x="0ch" y="0.5em"><tspan>########################################################################</tspan></text>
 <text x="0ch" y="1.5em"><tspan>                 </tspan><tspan class="bold">IP质量体检报告：</tspan><tspan class="bold fa6">2001:41d0:2:*:*:*:*:*</tspan></text>
-<text x="0ch" y="2.5em"><tspan>                   </tspan><tspan class="underline">https://github.com/xykt/IPQuality</tspan></text>
+<text x="0ch" y="2.5em"><tspan>                   </tspan><tspan class="underline">https://github.com/uvian/IPQuality</tspan></text>
 <text x="0ch" y="3.5em"><tspan>                bash &lt;(curl -sL https://Check.Place) -I</tspan></text>
 <text x="0ch" y="4.5em"><tspan>        报告时间：2025-09-04 16:38:12 CST  脚本版本：v2025-09-04</tspan></text>
 <text x="0ch" y="5.5em"><tspan>########################################################################</tspan></text>

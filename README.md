@@ -1,10 +1,8 @@
 <p align="center">
-<img src="https://hits.xykt.de/ip.svg?action=view&count_bg=%2379C83D&title_bg=%23555555&title=Runs&edge_flat=false"/> 
-<img src="https://hits.xykt.de/ip_github.svg?action=hit&count_bg=%233DC8C0&title_bg=%23555555&title=Visits&edge_flat=false"/> 
 <a href="/LICENSE"><img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg" alt="license" /></a>  
 </p>
 
-## IP质量体检脚本  -  [IP Quality Check Script (EN)](https://github.com/xykt/IPQuality/blob/main/README_EN.md)
+## IP质量体检脚本  -  [IP Quality Check Script (EN)](https://github.com/uvian/IPQuality/blob/main/README_EN.md)
 
 **支持OS/Platform：Ubuntu | Debian | Linux Mint | Fedora | Red Hat Enterprise Linux (RHEL) | CentOS | Arch Linux | Manjaro | Alpine Linux | AlmaLinux | Rocky Linux | macOS | Anolis OS | Alibaba Cloud Linux | SUSE Linux | openSUSE | Void Linux | Windows (via Docker)**
 
@@ -19,13 +17,13 @@
 - IP地址黑名单400+数据库检测
 
 ##### 屏幕截图
-![截图](https://raw.githubusercontent.com/xykt/IPQuality/main/res/cn_IPv4.svg)
+![截图](https://raw.githubusercontent.com/uvian/IPQuality/main/res/cn_IPv4.svg)
 
 ## 使用方法
 
 ### 便捷模式：交互界面
 
-![Net](https://github.com/xykt/ScriptMenu/raw/main/res/IP_CN.png)
+![Net](https://github.com/uvian/IPQuality/raw/main/res/cn_IPv4.svg)
 
 ##### Bash：
 ````bash
@@ -35,17 +33,17 @@ bash <(curl -Ls https://Check.Place) -I
 ##### Docker：
 - Linux
 ````bash
-docker run --rm --net=host -it xykt/check -I && docker rmi xykt/check > /dev/null 2>&1
+docker run --rm --net=host -it uvian/ipquality -I && docker rmi uvian/ipquality > /dev/null 2>&1
 ````
 
 - Windows (CMD)
 ````bash
-docker run --rm --net=host -it xykt/check -I & docker rmi xykt/check > NUL 2>&1
+docker run --rm --net=host -it uvian/ipquality -I & docker rmi uvian/ipquality > NUL 2>&1
 ````
 
 ### 高级模式：参数运行
 
-![Help](https://github.com/xykt/IPQuality/raw/main/res/help.png)
+![Help](https://github.com/uvian/IPQuality/raw/main/res/help.png)
 
 ##### 默认双栈检测：
 ````bash
@@ -95,7 +93,7 @@ bash <(curl -Ls https://IP.Check.Place) -y
 bash <(curl -Ls https://IP.Check.Place) -f
 ````
 
-##### 输出JSON结果（[输出示例](https://github.com/xykt/IPQuality/blob/main/res/output.json)）：
+##### 输出JSON结果（[输出示例](https://github.com/uvian/IPQuality/blob/main/res/output.json)）：
 ````bash
 bash <(curl -Ls https://IP.Check.Place) -j
 ````
@@ -120,12 +118,12 @@ bash <(curl -Ls https://IP.Check.Place) -p
 ##### Docker（支持运行参数，须在```&```前插入）：
 - Linux
 ````bash
-docker run --rm --net=host -it xykt/ipquality && docker rmi xykt/ipquality > /dev/null 2>&1
+docker run --rm --net=host -it uvian/ipquality && docker rmi uvian/ipquality > /dev/null 2>&1
 ````
 
 - Windows (CMD)
 ````cmd
-docker run --rm --net=host -it xykt/ipquality & docker rmi xykt/ipquality > NUL 2>&1
+docker run --rm --net=host -it uvian/ipquality & docker rmi uvian/ipquality > NUL 2>&1
 ````
 
 ## 脚本更新
@@ -184,8 +182,8 @@ docker run --rm --net=host -it xykt/ipquality & docker rmi xykt/ipquality > NUL 
 
 | 赞助商 | 商标 | 网址 | 
 | - | - | - | 
-| IP2Location | ![ip2location_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_ip2location.png) | [https://ip2location.io](https://ip2location.io)</br>[https://ip2location.com](https://ip2location.com) | 
-| Scamalytics | ![scamalytics_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_scamalytics.png) | [https://scamalytics.com](https://scamalytics.com) | 
+| IP2Location | ![ip2location_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_ip2location.png) | [https://ip2location.io](https://ip2location.io)</br>[https://ip2location.com](https://ip2location.com) | 
+| Scamalytics | ![scamalytics_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_scamalytics.png) | [https://scamalytics.com](https://scamalytics.com) | 
 
 - 衷心感谢主流IP风险数据库[AbuseIPDB](https://www.abuseipdb.com/)/[Cloudflare](https://cloudflare.com/)/[DB-IP](https://db-ip.com/)/[IP2Location](https://www.ip2location.io/)/[ipapi](https://ipapi.is/)/[IPinfo](https://ipinfo.io/)/[IPQS](https://www.ipqualityscore.com/)/[ipregistry](https://ipregistry.co/)/[Scamalytics](https://scamalytics.com/)提供的风险数据（排名不分先后）
 
@@ -197,23 +195,22 @@ docker run --rm --net=host -it xykt/ipquality & docker rmi xykt/ipquality > NUL 
 
 | 赞助商 | 商标 | 网址 | 
 | - | - | - | 
-| V.PS | ![vps_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_vps.png) | [https://v.ps](https://v.ps)| 
-| BAGE | ![bage_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_bage.png) | [https://bagevm.com](https://bagevm.com)|
-| LisaHost</br>丽萨主机 | ![lisa_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_lisa.png) | [https://lisahost.com](https://lisahost.com)|
-| VIRCS</br>威尔克斯 | ![vircs_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_vircs.png) | [https://vircs.com](https://www.vircs.com/promotion?code=6)|   
-| RapidProxy</br>`原生IP` | ![rapidproxy_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_rapidproxy.png) | [https://rapidproxy.io](https://www.rapidproxy.io/?ref=gitipquality)|   
-| VMRack | ![vmrack_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_vmrack.png) | [https://vmrack.net](https://www.vmrack.net?affid=ipcheck)|  
-| 蔭雲</br>YINNET | ![yinnet_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_yinnet.png) | [https://yin-net.com](https://yin-net.com)| 
-| Swiftproxy</br>`原生IP` | ![swiftproxy_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_swiftproxy.png) | [https://swiftproxy.net](https://www.swiftproxy.net/?ref=ipquality)|   
-| IPWO</br>`原生IP` | ![ipwo_logo](https://raw.githubusercontent.com/xykt/IPQuality/main/res/sponsor/logo_ipwo.png) | [https://ipwo.net](https://www.ipwo.net/?ref=githubxykt)|  
+| V.PS | ![vps_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_vps.png) | [https://v.ps](https://v.ps)| 
+| BAGE | ![bage_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_bage.png) | [https://bagevm.com](https://bagevm.com)|
+| LisaHost</br>丽萨主机 | ![lisa_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_lisa.png) | [https://lisahost.com](https://lisahost.com)|
+| VIRCS</br>威尔克斯 | ![vircs_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_vircs.png) | [https://vircs.com](https://www.vircs.com/promotion?code=6)|   
+| RapidProxy</br>`原生IP` | ![rapidproxy_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_rapidproxy.png) | [https://rapidproxy.io](https://www.rapidproxy.io/?ref=gitipquality)|   
+| VMRack | ![vmrack_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_vmrack.png) | [https://vmrack.net](https://www.vmrack.net?affid=ipcheck)|  
+| 蔭雲</br>YINNET | ![yinnet_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_yinnet.png) | [https://yin-net.com](https://yin-net.com)| 
+| Swiftproxy</br>`原生IP` | ![swiftproxy_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_swiftproxy.png) | [https://swiftproxy.net](https://www.swiftproxy.net/?ref=ipquality)|   
+| IPWO</br>`原生IP` | ![ipwo_logo](https://raw.githubusercontent.com/uvian/IPQuality/main/res/sponsor/logo_ipwo.png) | [https://ipwo.net](https://www.ipwo.net/?ref=uvian)|  
 
 ##### *E-Mail: sponsor@check.place Telegram Bot: https://t.me/xythebot*
 **仅接受长期稳定运营，信誉良好的商家*
 
 **Stars History:**
 
-![Stargazers over time](https://starchart.cc/xykt/IPQuality.svg?background=%23FFFFFF&axis=%23333333&line=%2377ff77)
+![Stargazers over time](https://starchart.cc/uvian/IPQuality.svg?background=%23FFFFFF&axis=%23333333&line=%2377ff77)
 
 **Daily Runs History:**
 
-![daily_runs_history](https://hits.xykt.de/history/ip.svg?days=46&chartType=bar&title=IP%E8%B4%A8%E9%87%8F%E4%BD%93%E6%A3%80%E8%84%9A%E6%9C%AC%E6%AF%8F%E6%97%A5%E8%BF%90%E8%A1%8C%E9%87%8F%E7%BB%9F%E8%AE%A1&width=1024&height=400&color=green)

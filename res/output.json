@@ -2,7 +2,7 @@
   "Head": {
     "IP": "36.235.*.*",
     "Command": "bash <(curl -sL https://Check.Place) -EI",
-    "GitHub": "https://github.com/xykt/IPQuality",
+    "GitHub": "https://github.com/uvian/IPQuality",
     "Time": "2026-01-15 09:31:25 UTC",
     "Version": "v2026-01-15"
   },

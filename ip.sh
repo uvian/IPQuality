@@ -5,7 +5,7 @@ current_bash_version=$(bash --version|head -n 1|awk -F ' ' '{for (i=1; i<=NF; i+
 if [ "$current_bash_version" = "0" ]||[ "$current_bash_version" = "1" ]||[ "$current_bash_version" = "2" ]||[ "$current_bash_version" = "3" ];then
 echo "ERROR: Bash version is lower than 4.0!"
 echo "Tips: Run the following script to automatically upgrade Bash."
-echo "bash <(curl -sL https://raw.githubusercontent.com/xykt/IPQuality/main/ref/upgrade_bash.sh)"
+echo "bash <(curl -sL https://raw.githubusercontent.com/uvian/IPQuality/main/ref/upgrade_bash.sh)"
 exit 0
 fi
 }
@@ -147,7 +147,7 @@ shead[title]="IP QUALITY CHECK REPORT: "
 shead[title_lite]="IP QUALITY CHECK REPORT(LITE): "
 shead[ver]="Version: $script_version"
 shead[bash]="bash <(curl -sL https://Check.Place) -EI"
-shead[git]="https://github.com/xykt/IPQuality"
+shead[git]="https://github.com/uvian/IPQuality"
 shead[time_raw]=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
 shead[time]="Report Time: ${shead[time_raw]}"
 shead[ltitle]=25
@@ -272,7 +272,7 @@ shead[title]="IP质量体检报告："
 shead[title_lite]="IP质量体检报告(Lite)："
 shead[ver]="脚本版本：$script_version"
 shead[bash]="bash <(curl -sL https://Check.Place) -I"
-shead[git]="https://github.com/xykt/IPQuality"
+shead[git]="https://github.com/uvian/IPQuality"
 shead[time_raw]=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S CST")
 shead[time]="报告时间：${shead[time_raw]}"
 shead[ltitle]=16
@@ -376,9 +376,9 @@ stail[link]="$Font_I报告链接：$Font_U"
 esac
 }
 countRunTimes(){
-local RunTimes=$(curl $CurlARG -s --max-time 10 "https://hits.xykt.de/ip?action=hit" 2>&1)
-stail[today]=$(echo "$RunTimes"|jq '.daily')
-stail[total]=$(echo "$RunTimes"|jq '.total')
+# Run counter disabled for fork — original hits.xykt.de endpoint not available
+stail[today]="?"
+stail[total]="?"
 }
 show_progress_bar(){
 show_progress_bar_ "$@" 1>&2
@@ -521,10 +521,10 @@ local timeout=2
 local http_code
 http_code=$(curl -s -o /dev/null -w "%{http_code}" --connect-timeout "$timeout" "$url" 2>/dev/null)
 if [[ $http_code == "204" ]];then
-rawgithub="https://github.com/xykt/IPQuality/raw/"
+rawgithub="https://github.com/uvian/IPQuality/raw/"
 return 0
 else
-rawgithub="https://testingcf.jsdelivr.net/gh/xykt/IPQuality@"
+rawgithub="https://testingcf.jsdelivr.net/gh/uvian/IPQuality@"
 return 1
 fi
 }

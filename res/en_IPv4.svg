@@ -86,7 +86,7 @@
 </g>
 <text x="0ch" y="0.5em"><tspan>########################################################################</tspan></text>
 <text x="0ch" y="1.5em"><tspan>                  </tspan><tspan class="bold">IP QUALITY CHECK REPORT: </tspan><tspan class="bold fa6">38.105.*.*</tspan></text>
-<text x="0ch" y="2.5em"><tspan>                   </tspan><tspan class="underline">https://github.com/xykt/IPQuality</tspan></text>
+<text x="0ch" y="2.5em"><tspan>                   </tspan><tspan class="underline">https://github.com/uvian/IPQuality</tspan></text>
 <text x="0ch" y="3.5em"><tspan>                bash &lt;(curl -sL https://Check.Place) -EI</tspan></text>
 <text x="0ch" y="4.5em"><tspan>       Report Time: 2025-09-04 08:34:15 UTC  Version: v2025-09-04</tspan></text>
 <text x="0ch" y="5.5em"><tspan>########################################################################</tspan></text>
