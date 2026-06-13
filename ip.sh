@@ -2256,73 +2256,7 @@ show_help(){
 echo -ne "\r$shelp\n"
 exit 0
 }
-show_ad(){
-RANDOM=$(date +%s)
-local -a ads=()
-local i=1
-while :;do
-local content
-content=$(curl -fsL --max-time 5 "${rawgithub}main/ref/ad$i.ans")||break
-ads+=("$content")
-((i++))
-done
-ADLines=0
-local adCount=${#ads[@]}
-[[ $adCount -eq 0 ]]&&return
-local -a indices=()
-for ((i=1; i<=adCount; i++));do indices+=("$i");done
-for ((i=adCount-1; i>0; i--));do
-local j=$((RANDOM%(i+1)))
-local tmp=${indices[i]}
-indices[i]=${indices[j]}
-indices[j]=$tmp
-done
-local -a aad
-aad[0]=$(curl -sL --max-time 5 "${rawgithub}main/ref/sponsor.ans")
-for ((i=0; i<adCount; i++));do
-aad[${indices[i]}]="${ads[i]}"
-done
-local rows cols
-if ! read rows cols < <(stty size 2>/dev/null);then cols=0;fi
-print_pair(){
-local left="$1" right="$2"
-local -a L R
-mapfile -t L <<<"$left"
-mapfile -t R <<<"$right"
-local i
-for ((i=0; i<12; i++));do
-printf "%-72s$Font_Suffix     %-72s\n" "${L[i]}" "${R[i]}" 1>&2
-done
-ADLines=$((ADLines+12))
-}
-print_block(){
-echo "$1" 1>&2
-ADLines=$((ADLines+12))
-}
-if [[ $cols -ge 150 ]];then
-if ((adCount==0));then
-print_block "${aad[0]}"
-elif ((adCount%2==1));then
-print_pair "${aad[0]}" "${aad[1]}"
-local k
-for ((k=2; k<=adCount; k+=2));do
-print_pair "${aad[$k]}" "${aad[$((k+1))]}"
-done
-else
-print_block "${aad[0]}"
-local k
-for ((k=1; k<=adCount; k+=2));do
-print_pair "${aad[$k]}" "${aad[$((k+1))]}"
-done
-fi
-else
-echo "${aad[0]}" 1>&2
-for ((i=1; i<=adCount; i++));do
-echo "${aad[$i]}" 1>&2
-done
-ADLines=$(((adCount+1)*12))
-fi
-}
+# 广告已移除
 read_ref(){
 Media_Cookie=$(curl $CurlARG -sL --retry 3 --max-time 10 "${rawgithub}main/ref/cookies.txt")
 IATA_Database="${rawgithub}main/ref/iata-icao.csv"
@@ -2637,6 +2571,5 @@ echo -ne "\r$Font_B$Font_Red${swarn[$ERRORcode]}$Font_Suffix\n"
 exit $ERRORcode
 fi
 clear
-show_ad
 [[ $IPV4work -ne 0 && $IPV4check -ne 0 ]]&&check_IP "$IPV4" 4
 [[ $IPV6work -ne 0 && $IPV6check -ne 0 ]]&&check_IP "$IPV6" 6
