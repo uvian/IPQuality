@@ -27,7 +27,7 @@
 
 ##### Bash：
 ````bash
-bash <(curl -Ls https://Check.Place) -I
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -I
 ````
 
 ##### Docker：
@@ -47,72 +47,72 @@ docker run --rm --net=host -it uvian/ipquality -I & docker rmi uvian/ipquality >
 
 ##### 默认双栈检测：
 ````bash
-bash <(curl -Ls https://IP.Check.Place)
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh)
 ````
 
 ##### 只检测IPv4结果：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -4
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -4
 ````
 
 ##### 只检测IPv6结果：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -6
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -6
 ````
 
 ##### 指定检测网卡：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -i eth0
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -i eth0
 ````
 
 ##### 指定代理服务器：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -x http://username:password@proxyserver:port
-bash <(curl -Ls https://IP.Check.Place) -x https://username:password@proxyserver:port
-bash <(curl -Ls https://IP.Check.Place) -x socks5://username:password@socksproxy:port
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -x http://username:password@proxyserver:port
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -x https://username:password@proxyserver:port
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -x socks5://username:password@socksproxy:port
 ````
 
 ##### 选择脚本语言为英文（任选其一）：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -E
-bash <(curl -Ls https://IP.Check.Place) -l en
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -E
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -l en
 ````
 
 ##### 跳过检测系统及安装依赖：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -n
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -n
 ````
 
 ##### 自动安装依赖：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -y
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -y
 ````
 
 ##### 报告展示完整IP地址：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -f
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -f
 ````
 
 ##### 输出JSON结果（[输出示例](https://github.com/uvian/IPQuality/blob/main/res/output.json)）：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -j
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -j
 ````
 
 ##### 输出报告ANSI/JSON/纯文本至文件：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -o /path/to/file.ansi
-bash <(curl -Ls https://IP.Check.Place) -o /path/to/file.json
-bash <(curl -Ls https://IP.Check.Place) -o /path/to/file.txtoranyother
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -o /path/to/file.ansi
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -o /path/to/file.json
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -o /path/to/file.txtoranyother
 ````
 
 ##### 基础信息多语言支持：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -l jp|es|de|fr|ru|pt
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -l jp|es|de|fr|ru|pt
 ````
 
 ##### 隐私模式——禁用在线报告生成功能：
 ````bash
-bash <(curl -Ls https://IP.Check.Place) -p
+bash <(curl -Ls https://raw.githubusercontent.com/uvian/IPQuality/refs/heads/main/ip.sh) -p
 ````
 
 ##### Docker（支持运行参数，须在```&```前插入）：
